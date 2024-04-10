@@ -1,13 +1,13 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
-    "pages/api/index.ts": {
+    "src/pages/api/index.ts": {
       "memory": 512
     },
-    "pages/api/cron/*.ts": {
+    "src/pages/api/cron/*.ts": {
       "maxDuration": 10
     },
-    "pages/api/**/*.ts": {
+    "src/pages/api/**/*.ts": {
       "maxDuration": 5
     }
   }
